@@ -1678,6 +1678,18 @@
   dependencies:
     "@sanity/diff-match-patch" "^3.1.1"
 
+"@sanity/document-internationalization@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@sanity/document-internationalization/-/document-internationalization-3.3.0.tgz#e7f5f49dd70b4be40dfd911e61ca9107bec8c360"
+  integrity sha512-c/Gp5ptp3cr1n0spZ4WFKbca6tcLg2fK9JKpG6HoFuSx4rDpCIN6B5P4hn3rn3ZYoOxPfcfLmgdyhu3g3zWKQA==
+  dependencies:
+    "@sanity/icons" "^3.5.3"
+    "@sanity/incompatible-plugin" "^1.0.5"
+    "@sanity/ui" "^2.10.11"
+    "@sanity/uuid" "^3.0.2"
+    sanity-plugin-internationalized-array "^3.0.3"
+    sanity-plugin-utils "^1.6.7"
+
 "@sanity/eslint-config-studio@^5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@sanity/eslint-config-studio/-/eslint-config-studio-5.0.1.tgz#1ba7bdc5cd7240ece8df58b4e59d59870b6ae9c4"
@@ -1732,6 +1744,13 @@
   dependencies:
     react-compiler-runtime "19.0.0-beta-201e55d-20241215"
 
+"@sanity/icons@^3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-3.5.5.tgz#14a1c846b0a49fad962703c7aeaa1d66c9299168"
+  integrity sha512-lCMvDovgU3epRcotGx60yNjw2NTNgxPnTY3wa2plCjY4dmLqm0kLuS7y4M4iy+7plwlVnIkfoZM+aVTK6f4rAw==
+  dependencies:
+    react-compiler-runtime "19.0.0-beta-201e55d-20241215"
+
 "@sanity/image-url@^1.0.2":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-1.1.0.tgz#f26905ef5bdd27165b0f04d8571eb75dc7cdf50a"
@@ -1764,6 +1783,11 @@
     tar-fs "^2.1.1"
     tinyglobby "^0.2.9"
 
+"@sanity/incompatible-plugin@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@sanity/incompatible-plugin/-/incompatible-plugin-1.0.5.tgz#cdf50c88a0938906a15ac2eb6cc21cafea898b76"
+  integrity sha512-9JGAacbElUPy9Chghd+sllIiM3jAcraZdD65bWYWUVKkghOsf1L/+jFLz1rcAuvrA9o2s7Y+T75BNcXuLwRcvw==
+
 "@sanity/insert-menu@1.0.16":
   version "1.0.16"
   resolved "https://registry.yarnpkg.com/@sanity/insert-menu/-/insert-menu-1.0.16.tgz#7158a1e5bf13d15c2dc0020e9ec8fa6eb19258ab"
@@ -1772,6 +1796,16 @@
     "@sanity/icons" "^3.5.0"
     "@sanity/ui" "^2.9.0"
     lodash "^4.17.21"
+
+"@sanity/language-filter@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@sanity/language-filter/-/language-filter-4.0.3.tgz#6ba7f641fe152cd34c1ebf247744d4d8a4db77c9"
+  integrity sha512-fh2HMkAt1VBwZtQQ9XKMoR3OPkT6uJXuCxrd0M5rhIF6Mrldoi/kqF8JLBxwuh0PteI+Ftr6pRNLTUXQIIh1dg==
+  dependencies:
+    "@sanity/icons" "^3.5.3"
+    "@sanity/incompatible-plugin" "^1.0.5"
+    "@sanity/ui" "^2.10.11"
+    "@sanity/util" "^3.67.1"
 
 "@sanity/logos@^2.1.13", "@sanity/logos@^2.1.4":
   version "2.1.13"
@@ -1886,6 +1920,27 @@
     "@sanity/client" "^6.24.1"
     "@types/react" "^18.3.5"
 
+"@sanity/types@3.68.3":
+  version "3.68.3"
+  resolved "https://registry.yarnpkg.com/@sanity/types/-/types-3.68.3.tgz#2796620be8e915f1b2ed8dcd55d93ef2dd7806b9"
+  integrity sha512-JemibQXC08rHIXgjUH/p2TCiiD9wq6+dDkCvVHOooCvaYZNhAe2S9FAEkaA6qwWtPzyY2r6/tj1eDgNeLgXN1Q==
+  dependencies:
+    "@sanity/client" "^6.24.1"
+
+"@sanity/ui@^2.10.11":
+  version "2.10.12"
+  resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-2.10.12.tgz#430fa386bd5d5bd3b6ac8b16d22f07e13c1891a2"
+  integrity sha512-e7NzH/b8E5O+NxPsmodpgCDek8cWBa9ujF5sQr8E/eVzRSF4use+PmbgJZUJCY/xX+bbl0sOaWw4+Bdjy7mM5A==
+  dependencies:
+    "@floating-ui/react-dom" "^2.1.2"
+    "@sanity/color" "^3.0.6"
+    "@sanity/icons" "^3.5.5"
+    csstype "^3.1.3"
+    framer-motion "^11.15.0"
+    react-compiler-runtime "19.0.0-beta-201e55d-20241215"
+    react-refractor "^2.2.0"
+    use-effect-event "^1.0.2"
+
 "@sanity/ui@^2.10.7", "@sanity/ui@^2.9.0", "@sanity/ui@^2.9.1":
   version "2.10.11"
   resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-2.10.11.tgz#8b1e15965953ebefa18cd1264d7da1e3bc565696"
@@ -1918,6 +1973,17 @@
   dependencies:
     "@sanity/client" "^6.24.1"
     "@sanity/types" "3.67.1"
+    get-random-values-esm "1.0.2"
+    moment "^2.30.1"
+    rxjs "^7.8.1"
+
+"@sanity/util@^3.67.1":
+  version "3.68.3"
+  resolved "https://registry.yarnpkg.com/@sanity/util/-/util-3.68.3.tgz#52b485a8cb3c513ef25d9db2f59b46f89e1cf9b4"
+  integrity sha512-J4Ov75oUvMqx221VEJkKNSibzF0D8VyCzejtwftW+jP80XguYFqBz7bAcTmwJ5vnxNUoAUCeAdZBoOYVpgew4g==
+  dependencies:
+    "@sanity/client" "^6.24.1"
+    "@sanity/types" "3.68.3"
     get-random-values-esm "1.0.2"
     moment "^2.30.1"
     rxjs "^7.8.1"
@@ -5964,7 +6030,7 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.2"
 
-react-fast-compare@^3.2.0:
+react-fast-compare@^3.2.0, react-fast-compare@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.2.tgz#929a97a532304ce9fee4bcae44234f1ce2c21d49"
   integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
@@ -6380,6 +6446,29 @@ sanity-diff-patch@^4.0.0:
   integrity sha512-1OOTx/Uw0J3rwNkI4J/4XJfTGb2Rze/gl5jJGRw+M2hRGkp1QEu2wFHiC9adj83ABYthOczBCBpTHHeZluctdw==
   dependencies:
     "@sanity/diff-match-patch" "^3.1.1"
+
+sanity-plugin-internationalized-array@^3.0.3:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/sanity-plugin-internationalized-array/-/sanity-plugin-internationalized-array-3.1.0.tgz#75f84738a8ff1bb1cf7051fc42b3687cb5b41d88"
+  integrity sha512-mf+BFF9EcvKrF8fHOMfp2lah7m5H+7mdPC4SmivwVDvKcR16CzYmEI9tGx5CeGw+xK044EPaWFVUdApLN/Z7uA==
+  dependencies:
+    "@sanity/icons" "^3.5.3"
+    "@sanity/incompatible-plugin" "^1.0.5"
+    "@sanity/language-filter" "^4.0.3"
+    "@sanity/ui" "^2.10.11"
+    fast-deep-equal "^3.1.3"
+    lodash "^4.17.21"
+    suspend-react "0.1.3"
+
+sanity-plugin-utils@^1.6.7:
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/sanity-plugin-utils/-/sanity-plugin-utils-1.6.7.tgz#da621e25d3b73362f83ccb03bf1a7bfada3a9a11"
+  integrity sha512-+ji29cv9Czk3w4KfQI/VDoljFPAV1A0czyTmoAvnEkD2l53+fxY+4S/HElLLlZDpy1XucZjOldD1tGVK5AQnig==
+  dependencies:
+    "@sanity/icons" "^3.5.3"
+    "@sanity/incompatible-plugin" "^1.0.5"
+    "@sanity/ui" "^2.10.11"
+    react-fast-compare "^3.2.2"
 
 sanity@^3.67.1:
   version "3.67.1"
