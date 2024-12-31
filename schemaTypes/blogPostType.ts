@@ -1,5 +1,24 @@
 import {defineField, defineType} from 'sanity'
 
+/**
+ * Example Query
+ * const FILTERED_BLOG_POSTS_QUERY = `*[_type == "blog-post" && "GBR" in locations[]->isoCode ]{
+  _id,
+  title,
+  author,
+  slug,
+  publishedAt,
+  imageUrl,
+  overview,
+  body,
+  locations[]->{
+    _id,
+    name,
+    isoCode
+  }
+}`;
+ * 
+ */
 export const blogPostType = defineType({
   name: 'blog-post',
   title: 'Blog Post',
@@ -39,6 +58,20 @@ export const blogPostType = defineType({
       name: 'body',
       type: 'array',
       of: [{type: 'block'}],
+    }),
+    defineField({
+      name: 'locations',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'location'}]}],
+      title: 'Locations',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'brands',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'brand'}]}],
+      title: 'Brands',
+      validation: (rule) => rule.required(),
     }),
   ],
 })

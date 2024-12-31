@@ -9,9 +9,5 @@ export default defineType({
       name: 'title',
       group: 'content',
     }),
-    //defineField({
-    //  name: 'experiment',
-    //  type: 'amplitude-experiment',
-    //}),
   ],
 })

@@ -9,6 +9,7 @@ export const deskStructure = (S: StructureBuilder) =>
         .title('Location Settings')
         .child(S.documentTypeList('location').title('Locations')),
       S.listItem().title('Posts').child(S.documentTypeList('post').title('Posts')),
+      S.listItem().title('Blog Posts').child(S.documentTypeList('blog-post').title('Blog Posts')),
 
       // Add a "Brands" section to dynamically handle brands, locations, and posts
       S.listItem()

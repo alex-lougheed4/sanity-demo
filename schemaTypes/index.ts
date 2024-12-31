@@ -2,6 +2,8 @@ import {postType} from './postType'
 import {blogPostType} from './blogPostType'
 import landingPage from './landingPageType'
 import productType from './productType'
+import {brand} from './brand'
+import {location} from './location'
 
 /**
  * Product Copies
@@ -14,12 +16,4 @@ Maybe even having the categories as CMS data to drive the site structure
 A/B testing with Amplitude must work fine
 Product copy and probably images too
  */
-export const schemaTypes = [postType, blogPostType]
-
-export const levitySchemaTypes = []
-
-export const medexpressSchemaTypes = []
-
-export const rocketrxSchemaTypes = []
-
-export const dermaticaSchemaTypes = []
+export const schemaTypes = [postType, blogPostType, brand, location]
