@@ -3,6 +3,7 @@ import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 import {deskStructure} from './deskstructure'
+import {documentInternationalization} from '@sanity/document-internationalization'
 
 export default defineConfig([
   {
@@ -17,6 +18,14 @@ export default defineConfig([
         structure: (S) => deskStructure(S),
       }),
       visionTool(),
+      documentInternationalization({
+        // Required configuration
+        supportedLanguages: [
+          {id: 'de', title: 'German'},
+          {id: 'en', title: 'English'},
+        ],
+        schemaTypes: ['blog-post', 'landing-page', 'product'],
+      }),
     ],
     schema: {
       types: schemaTypes,

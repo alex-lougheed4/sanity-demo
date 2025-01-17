@@ -10,7 +10,13 @@ export const deskStructure = (S: StructureBuilder) =>
         .child(S.documentTypeList('location').title('Locations')),
       S.listItem().title('Posts').child(S.documentTypeList('post').title('Posts')),
       S.listItem().title('Blog Posts').child(S.documentTypeList('blog-post').title('Blog Posts')),
-
+      S.listItem().title('Products').child(S.documentTypeList('product').title('Product')),
+      S.listItem()
+        .title('Landing Pages')
+        .child(S.documentTypeList('landing-page').title('Landing Pages')),
+      S.listItem()
+        .title('Information Pages')
+        .child(S.documentTypeList('information-page').title('Information Pages')),
       // Add a "Brands" section to dynamically handle brands, locations, and posts
       S.listItem()
         .title('Brands')

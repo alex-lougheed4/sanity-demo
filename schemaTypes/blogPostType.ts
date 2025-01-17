@@ -17,6 +17,9 @@ import {defineField, defineType} from 'sanity'
     isoCode
   }
 }`;
+
+const BLOG_POST_QUERY = `*[_type == "blog-post" && slug.current == $slug][0]`;
+
  * 
  */
 export const blogPostType = defineType({

@@ -33,8 +33,8 @@ export const location = defineType({
       validation: (rule) =>
         rule
           .regex(/^[A-Z]{2,3}$/, {
-            name: 'ISO code', // Error message is "Does not match ISO code pattern"
-            invert: false, // Boolean to allow any value that does NOT match pattern
+            name: 'ISO code',
+            invert: false,
           })
           .error('Must be a valid ISO code (2 or 3 uppercase letters)'),
     }),
