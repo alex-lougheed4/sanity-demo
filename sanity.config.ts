@@ -4,6 +4,7 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 import {deskStructure} from './deskstructure'
 import {documentInternationalization} from '@sanity/document-internationalization'
+import {amplitudeExperiment} from '@tinloof/sanity-amplitude-experiment'
 
 export default defineConfig([
   {
@@ -26,6 +27,7 @@ export default defineConfig([
         ],
         schemaTypes: ['blog-post', 'landing-page', 'product'],
       }),
+      amplitudeExperiment(),
     ],
     schema: {
       types: schemaTypes,
@@ -43,6 +45,7 @@ export default defineConfig([
         structure: (S) => deskStructure(S),
       }),
       visionTool(),
+      amplitudeExperiment(),
     ],
     schema: {
       types: schemaTypes,

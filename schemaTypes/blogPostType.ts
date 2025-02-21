@@ -76,5 +76,9 @@ export const blogPostType = defineType({
       title: 'Brands',
       validation: (rule) => rule.required(),
     }),
+    defineField({
+      name: 'experiment',
+      type: 'amplitude-experiment',
+    }),
   ],
 })
