@@ -64,7 +64,8 @@ export default defineType({
       title: 'Category',
       options: {
         list: [
-          {title: 'Weight Loss', value: 'weightLoss'},
+          {title: 'Weight Loss Injectable', value: 'weightLossInjectable'},
+          {title: 'Weight Loss Tablet', value: 'weightLossTablet'},
           {title: 'Hair Loss', value: 'hairLoss'},
           {title: 'Erectile Dysfunction', value: 'erectileDysfunction'},
         ],
